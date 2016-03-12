@@ -1,0 +1,85 @@
+﻿@using Baidyanath.Resources
+
+<strong style="float: right; margin-right: 10px;">&nbsp;  &nbsp;  &nbsp;  &nbsp;
+     @if (Request.IsAuthenticated)
+     {
+        
+         @Html.AntiForgeryToken()
+         @Html.ValidationSummary(true) 
+         
+         <bdi>@Resource.Welcome &nbsp;@Html.ActionLink(Html.Encode(User.Identity.Name).Split('_')[0], "UserDetails", "Account") </bdi>
+         <bdi class="loginButton logOut">
+             @Html.ActionLink(Resource.LogOut, "Logout", "Account")
+         </bdi>
+        
+     }
+     else
+     {
+         @Html.AntiForgeryToken()
+         @Html.ValidationSummary(true)
+
+         <bdi>@Resource.Welcome &nbsp;@Resource.Guest</bdi>
+         <bdi class="loginButton">
+             @Html.ActionLink(Resource.Login, "Login", "Account")
+         </bdi>
+     }
+
+</strong>
+
+<style>
+    .loginButton
+    {
+        width: 20px;
+        color: white;
+        padding-top: 1px;
+        padding-bottom: 4px;
+        height: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: small;
+        -moz-box-shadow: inset 0 5px 8px #00ff21;
+        -webkit-box-shadow: inset 0 5px 8px #00ff21;
+        box-shadow: inset 0 5px 8px #00ff21;
+    }
+
+        .loginButton a
+        {
+            color: wheat;
+        }
+
+        .loginButton:hover
+        {
+            -moz-box-shadow: inset 0 5px 4px #00ff21;
+            -webkit-box-shadow: inset 0 5px 4px #00ff21;
+            box-shadow: inset 0 5px 4px #00ff21;
+        }
+
+            .loginButton:hover a
+            {
+                color: white;
+            }
+
+    .logOut
+    {
+        -moz-box-shadow: inset 0px 5px 8px #d96e6e;
+        -webkit-box-shadow: inset 0px 5px 8px #d96e6e;
+        box-shadow: inset 0px 5px 8px #d96e6e;
+    }
+
+        .logOut a
+        {
+            color: white;
+        }
+
+        .logOut:hover
+        {
+            -moz-box-shadow: inset 0 5px 5px #d96e6e;
+            -webkit-box-shadow: inset 0 5px5 px #d96e6e;
+            box-shadow: inset 0 5px 5px #d96e6e;
+        }
+
+            .logOut:hover a
+            {
+                color: red;
+            }
+</style>

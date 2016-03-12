@@ -1,0 +1,19 @@
+﻿@using Baidyanath.Extension
+@{
+    ViewBag.Title = "ContactUs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="ContactUsPage">
+    @section Header {
+        @Baidyanath.Resources.Resource.MenuContactUs
+    }    
+    <div class="content @(System.Threading.Thread.CurrentThread.CurrentCulture.Name == "hi-IN" ? "contentHindi" : "")">
+        <article>
+            <div id="Article">
+                @Html.Literal(Baidyanath.Resources.ContactUsResource.Content)
+            </div>
+        </article>
+
+    </div>
+</div>

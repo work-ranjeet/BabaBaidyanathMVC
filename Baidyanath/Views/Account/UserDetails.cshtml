@@ -1,0 +1,170 @@
+﻿@model System.Threading.Tasks.Task<Baidyanath.Models.Account.UserProfile>
+@using Baidyanath.Resources
+
+@{
+    ViewBag.Title = "UserDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<div class="UserDetailsPage">
+    @section Header {
+        @Baidyanath.Resources.Resource.YourProfile
+    }
+    <div class="content @(System.Threading.Thread.CurrentThread.CurrentCulture.Name == "hi-IN" ? "contentHindi" : "")">
+        <div style="height: 1px;"></div>
+        <section class="header">
+            <div class="image" style="float: left;">
+                <img src="~/Content/images/icon/business_user.png" alt="" runat="server" id="MyImage" />
+                <figcaption class="imgCaption">Add/Edit Image</figcaption>
+            </div>
+            <div style="float: right;" class="headerDetail">
+                <div>
+                    <span>@Resource.UserProfileYourProfileis</span>
+                    <meter value="6" min="0" max="10" title="tr">@Model.Result.Header.ProfileCompletionPercent%</meter>
+                    <span>@Resource.UserProfilecompleted.</span>
+                    <span style="float: right; margin-right: 10px;">Change Password</span>
+                </div>
+                <div>
+                    <span>@Resource.UserProfileUserID</span><span class="disableText">:&nbsp;@Model.Result.Header.Email</span>
+                    <span style="float: right; margin-right: 10px;">Send Me Your Wishes</span>
+                </div>
+                <div>
+                    <span>@Resource.UserProfileProfileCreatedOn</span><span class="disableText">:&nbsp;@Model.Result.Header.ProfileCreatedOn.ToShortDateString()</span>
+                </div>
+                <div>
+                    <span>@Resource.UserProfileLastLoginOn</span><span class="disableText">:&nbsp;@Model.Result.Header.LastLoginDate.ToShortDateString()</span>
+
+                </div>
+                <div>
+                    <span>@Resource.UserProfileDailyHoroscope</span>
+                    <div class="Horoscope">@Model.Result.Header.Horoscope</div>
+                </div>
+
+
+            </div>
+        </section>
+        <section id="basicDetails" class="basicDetails">
+            <div>
+                <span class="heading">@Resource.UserProfileBasicDetails&nbsp;</span>|
+                <span id="EditBasicButton" style="color: blue; cursor: pointer;">&nbsp;Edit</span>
+            </div>
+            <hr />
+            <div>
+                <table>
+                    <colgroup>
+                        <col style="width: 20%;" />
+                        <col style="width: 70%;" />
+                        <col style="width: 10%;" />
+                    </colgroup>
+                    <tr>
+                        <td><span>@Resource.UserProfileName </span></td>
+                        <td><span class="disableText">:&nbsp;@Model.Result.Basic.FName&nbsp;@Model.Result.Basic.MName&nbsp;@Model.Result.Basic.LName</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span>@Resource.UserProfileDateOfBirth</span></td>
+                        <td><span class="disableText">:&nbsp;@Model.Result.Basic.DateOfBirth.ToLongDateString()</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span>@Resource.UserProfileAge</span></td>
+                        <td><span class="disableText">:&nbsp;@Model.Result.Basic.Age</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span>@Resource.UserProfileGender</span></td>
+                        <td><span class="disableText">:&nbsp;@Model.Result.Basic.Gender</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span>@Resource.UserProfileMarriedStatus</span></td>
+                        <td><span class="disableText">:&nbsp;@Model.Result.Basic.MariedStatus</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span>@Resource.UserProfileHoroScope </span></td>
+                        <td><span class="disableText">:&nbsp;@Model.Result.Basic.SunShine</span></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="UserBasicProfileEdit" class="UserBasicProfileEdit">
+            @{Html.RenderPartial("UserBasicProfileEditPartial", Model.Result.Basic);}
+        </section>
+        <section id="LocationDetails" class="location">
+            <div>
+                <span class="heading">@Resource.UserProfileLocation&nbsp;</span>|
+                <span id="EditLocationButton" style="color: blue; cursor: pointer;">&nbsp;Edit</span>
+            </div>
+            <hr />
+            <div style="text-align: center;">
+                <address>
+                    @Model.Result.Location.Address1
+                    <br />
+                    @Model.Result.Location.Address2
+                </address>
+            </div>
+            <div>&nbsp;</div>
+            <div>
+                <table>
+                    <colgroup>
+                        <col style="width: 20%;" />
+                        <col style="width: 20%;" />
+                        <col style="width: 25%;" />
+                        <col style="width: 15%;" />
+                        <col style="width: 20%;" />
+                    </colgroup>
+                    <tr>
+                        <td><span>@Resource.UserProfileCity</span></td>
+                        <td>:<span class="disableText">@Model.Result.Location.City</span></td>
+                        <td>&nbsp;</td>
+                        <td><span>@Resource.UserProfileMobile </span></td>
+                        <td><span class="disableText">:&nbsp;@Model.Result.Location.Mobile</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>@Resource.UserProfileState</span></td>
+                        <td><span class="disableText">:&nbsp;@Model.Result.Location.State</span></td>
+                        <td>&nbsp;</td>
+                        <td><span>@Resource.UserProfileEmail </span></td>
+                        <td><span class="disableText">:&nbsp;@Model.Result.Location.Email</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>@Resource.UserProfileCountry</span></td>
+                        <td><span class="disableText">:&nbsp;@Model.Result.Location.Country</span></td>
+                        <td>&nbsp;</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="UserProfilelocationEdit" class="UserProfilelocationEdit">
+            @{Html.RenderPartial("UserLocationEditPartial", Model.Result.Location);}
+        </section>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#EditBasicButton").click(function () {
+            $("#basicDetails").hide('explode');
+
+            $("#UserBasicProfileEdit").delay(200).show(1000);
+        });
+        $("#EditBasicCloseButton").click(function () {
+            $("#UserBasicProfileEdit").hide('explode');
+            $("#basicDetails").delay(200).show(1000);
+        });
+
+        $("#EditLocationButton").click(function () {
+            $("#LocationDetails").hide('explode');
+            $("#UserProfilelocationEdit").delay(200).show(1000);
+        });
+        $("#EditLocationCloseButton").click(function () {
+            $("#UserProfilelocationEdit").hide('explode');
+            $("#LocationDetails").delay(200).show(1000);
+        });
+    });
+</script>

@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Baidyanath.Helper.ServiceEntity>
+@using System.Threading
+@using Baidyanath.Extension
+@using Baidyanath.Helper
+@using System.Collections.Concurrent
+@{
+    ViewBag.Title = "Services";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="OurServicePage ">
+    @using (Html.BeginForm())
+    {
+        @section Header {
+            @Baidyanath.Resources.Resource.MenuOurServices
+        }
+               
+       
+       
+        <div class="subContent">
+            @Html.Literal(string.Format(Baidyanath.Resources.Resource.OurServicesSubHeading, Html.ActionLink(Baidyanath.Resources.Resource.MenuContactUs, "ContactUs", "ContactUs")))
+        </div>
+        <div class="content @(Thread.CurrentThread.CurrentCulture.Name == "hi-IN" ? "contentHindi" : "")">
+
+            <ul>
+
+                @{var rootResult = Model.ToList().FindAll(val => val.ServiceParentID == 0).OrderBy(v => v.ServiceOrder);
+
+                  foreach (var item in rootResult)
+                  {
+                      var child = Model.ToList().FindAll(val => val.ServiceParentID == item.ServiceID).OrderBy(v => v.ServiceOrder);
+                      if (child.Count() > 0)
+                      {
+                    <li>@(Thread.CurrentThread.CurrentCulture.Name == "hi-IN" ? item.ServiceTitleInd : item.ServiceTitle)
+
+                        @fetchChild(child)
+
+                    </li>
+                      }
+                      else
+                      {
+                    <li>@(Thread.CurrentThread.CurrentCulture.Name == "hi-IN" ? item.ServiceTitleInd : item.ServiceTitle)</li>
+                      }
+                  }
+                        
+                }
+            </ul>
+            @helper fetchChild(IEnumerable<ServiceEntity> childService)
+{
+                <ul>
+                    @foreach (var childItem in childService)
+                    {
+                        var child = Model.ToList().FindAll(val => val.ServiceParentID == childItem.ServiceID).OrderBy(v => v.ServiceOrder);
+                        if (child.Count() > 0)
+                        {
+                        <li>@(Thread.CurrentThread.CurrentCulture.Name == "hi-IN" ? childItem.ServiceTitleInd : childItem.ServiceTitle)
+
+                            @fetchChild(child)
+
+                        </li>
+                        }
+                        else
+                        {
+                        <li>@(Thread.CurrentThread.CurrentCulture.Name == "hi-IN" ? childItem.ServiceTitleInd : childItem.ServiceTitle)</li>
+                        }
+
+                    }
+                </ul>
+            }
+        </div>
+     
+        
+    }
+</div>
+

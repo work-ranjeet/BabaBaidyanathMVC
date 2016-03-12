@@ -1,0 +1,83 @@
+﻿.outer_shadow
+{
+    -khtml-box-shadow: inset 0 0 8px #000000;
+    -moz-box-shadow: inset 0 0 8px #000000;
+    -webkit-box-shadow: inset 0 0 8px #000000;
+    box-shadow: inset 0 0 8px #000000;
+}
+
+.inner_shadow
+{
+    -moz-box-shadow: 0 0 8px 1px #000000;
+    -webkit-box-shadow: 0 0 8px 1px #000000;
+    box-shadow: 0 0 8px 1px #000000;
+}
+/*---------------------------------------------------------- Dialog Css----------------------------------------------------------------*/
+
+.ui-widget
+{
+    border: none;
+}
+
+.ui-widget-content
+{
+    background-color: rgb(71, 129, 181);
+    background-image: none;
+    width: 102%;
+    -khtml-box-shadow: inset 0 0 8px #000000;
+    -moz-box-shadow: inset 0 0 8px #000000;
+    -webkit-box-shadow: inset 0 0 8px #000000;
+    box-shadow: inset 0 0 8px #000000;
+}
+
+.ui-corner-all
+{
+    -moz-border-radius: 5px /*{cornerRadiusShadow}*/;
+    -khtml-border-radius: 5px /*{cornerRadiusShadow}*/;
+    -webkit-border-radius: 5px /*{cornerRadiusShadow}*/;
+    border-radius: 5px /*{cornerRadiusShadow}*/;
+}
+
+.ui-dialog .ui-dialog-titlebar
+{
+    color: white;
+    border: none;
+    background-color: transparent;
+    background-image: none;
+    -moz-border-radius: 0px /*{cornerRadiusShadow}*/;
+    -khtml-border-radius: 0px /*{cornerRadiusShadow}*/;
+    -webkit-border-radius: 0px /*{cornerRadiusShadow}*/;
+    border-radius: 0px /*{cornerRadiusShadow}*/;
+    border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    -khtml-border-top-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    -khtml-border-top-right-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+}
+
+
+.ui-dialog .ui-dialog-titlebar-close
+{
+    background-color: wheat;
+}
+
+.ui-dialog .ui-dialog-content
+{
+    border: 0;
+    border-bottom-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    -khtml-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    -khtml-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    background-color: transparent;
+    -moz-box-shadow: 0 0 8px 1px #000000;
+    -webkit-box-shadow: 0 0 8px 1px #000000;
+    -khtml-box-shadow: 0 0 8px 1px #000000;
+    box-shadow: 0 0 8px 1px #000000;
+}

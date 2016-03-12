@@ -1,0 +1,81 @@
+﻿@model Baidyanath.Areas.Admin.Models.CreateAlbum
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>CreateAlbum</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AlbumType)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AlbumType)
+            @Html.ValidationMessageFor(model => model.AlbumType)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AlbumTypeID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AlbumTypeID)
+            @Html.ValidationMessageFor(model => model.AlbumTypeID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AlbumTitle)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AlbumTitle)
+            @Html.ValidationMessageFor(model => model.AlbumTitle)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AlbumInformation)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AlbumInformation)
+            @Html.ValidationMessageFor(model => model.AlbumInformation)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AlbumLikeCount)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AlbumLikeCount)
+            @Html.ValidationMessageFor(model => model.AlbumLikeCount)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AlbumOrder)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AlbumOrder)
+            @Html.ValidationMessageFor(model => model.AlbumOrder)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IsActive)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IsActive)
+            @Html.ValidationMessageFor(model => model.IsActive)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

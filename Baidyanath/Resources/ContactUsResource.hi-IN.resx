@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Content" xml:space="preserve">
+    <value>&lt;div style="line-height: 18px; text-align: center;"&gt;
+        &lt;u&gt;&lt;b&gt;पूर्ण पता&lt;/b&gt;&lt;/u&gt;&lt;br /&gt;
+        &lt;b&gt;श्री जय कुमार&lt;/b&gt;&lt;br /&gt;
+        पिता - श्री जवाहर चरण द्वारी&lt;br /&gt;
+        दादा - स्व 0 श्री शारदा चरण द्वारी&lt;br /&gt;
+        माँ अन्नपुर्णा स्मृति - शारदा सदन&lt;br /&gt;
+        गोविन्द खवाड़े लेन&lt;br /&gt;
+        बैद्यनाथ धाम, देवघर&lt;br /&gt;
+        झारखण्ड, भारत&lt;br /&gt;
+        &lt;b&gt;पिन-कोड / पोस्टल-कोड : &lt;/b&gt;814112&lt;br /&gt;
+        &lt;b&gt;मोबाइल-न0 .&lt;/b&gt; +91 9204616249&lt;br /&gt;
+        &lt;b&gt;मोबाइल-न0 .&lt;/b&gt; +91 9431942786&lt;br /&gt;
+    &lt;/div&gt;
+    &lt;br/&gt;
+   
+ &lt;p&gt;हम लोग आप के यहाँ की यात्रा के दौरान और आप के जीवन के हर कदम पर, यहाँ पूजा करने से ले कर घुमने , ठहरने और जीवन में खुशियों के लाने में यथा संभव मार्गदर्शन करेंगे&lt;/p&gt;
+     
+&lt;p&gt;एक तीर्थ पुरोहित होने के नाते हम लोग आप के लिए यहाँ पूजा - अर्चना, जप, रुद्राभिषेक आदि की व्यस्था करेंगे और कोशिश रहेगी की वो पल आप के जीवन के लिए यादगार बने ऐसे वयस्था हो&lt;/p&gt;
+       
+&lt;p&gt;कई भारतीय, विदेशी और लाखो करोडों लोग(भक्तगण) अपनी मनोकामना पूर्ण करने के लिए यहाँ की यात्रा करते हैं , हम लोग आप सभी का हार्दिक स्वागत करते हैं की समय निकाल कर यहाँ और इसे स्वं  अनुभव करें और बाबा बैद्यनाथ की  प्राप्त करें&lt;/P&gt;
+        &lt;br/&gt;
+    &lt;u&gt;&lt;b&gt;कहाँ ठहरें&lt;/b&gt;&lt;/u&gt;
+    &lt;ul&gt;
+        &lt;li&gt;बम बम बाबा पथ में एक आश्रम निर्माणाधीन है&lt;/li&gt;
+        &lt;li&gt;शिव गंगा तालाब के समीप हम लोगों का दो यात्री निवास है&lt;/li&gt;
+        &lt;li&gt;एस के आलावे यहाँ कई होटल , रेस्ट हाउस, और धर्मशाला भी हैं &lt;/li&gt;
+    &lt;/ul&gt;
+   &lt;br/&gt;
+    &lt;div class="Content normtxt" style="color: wheat;"&gt;
+        बाबा बैद्यनाथ आप को ख़ुशियाँ, सफलता और अच्छा स्वास्थ प्रदान करें एवं आप की सभी मनोकामना पूर्ण करें
+    &lt;/div&gt;</value>
+  </data>
+  <data name="Heading" xml:space="preserve">
+    <value>EVERY PROBLEM HAS A SOLUTION WHICH COMES FROM YOUR INSIDE ONLY</value>
+  </data>
+</root>

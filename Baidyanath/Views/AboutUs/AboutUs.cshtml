@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = Baidyanath.Resources.Resource.MenuAboutUs;
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using Baidyanath.Extension
+<div class="AboutUsPage ">
+
+    @section Header {
+        @Baidyanath.Resources.AboutUsResource.AboutUsHeader
+    }
+
+
+    <div class="content @(System.Threading.Thread.CurrentThread.CurrentCulture.Name == "hi-IN" ? "contentHindi" : "")">
+        <article>@Html.Literal(Baidyanath.Resources.AboutUsResource.AboutUsContent)</article>
+    </div>
+    <br />
+
+    <div class="heading @(System.Threading.Thread.CurrentThread.CurrentCulture.Name == "hi-IN" ? "headingHindi" : "")" style="-moz-box-shadow: inset 0px 10px 10px rgb(71, 129, 181);
+        -webkit-box-shadow: inset 0px 10px 10px rgb(71, 129, 181);
+        box-shadow: inset 0px 10px 10px rgb(71, 129, 181);">
+        <div style="height: 8px;"></div>
+        @Baidyanath.Resources.AboutUsResource.AboutFailmy
+    </div>
+    <div class="content innerShadow @(System.Threading.Thread.CurrentThread.CurrentCulture.Name == "hi-IN" ? "contentHindi" : "")">
+        <article>@Html.Literal(Baidyanath.Resources.AboutUsResource.AboutUsContent2)</article>
+    </div>
+
+</div>

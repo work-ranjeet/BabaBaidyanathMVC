@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="HomeContent" xml:space="preserve">
+    <value>बारह ज्योतिर्लिंगों में से एक बाबा बैद्यनाथ नवम ज्योतिर्लिंग है I ये ज्योतिर्लिंग भारत और दूसरे देशों के भक्तों के बीच अत्यंत लोकप्रिय है I बाबा बैद्यनाथ ज्योतिर्लिंग का मंदिर भारत देश के झारखण्ड राज्य के संथाल परगना क्षेत्र के देवघर जिला में स्थित हैं I बाबा बैद्यनाथ ज्योतिर्लिंग सभी भक्तो कि मनोकामना पूर्ण करते हैं इसी कारण ये मनोकामना लिंग के नाम से भी जाने जाते हैं I इस के आलावे इन्हें आत्मालिंग,आदि नमो से भी जाने जाते हैं I बैद्यनाथ धाम को देवघर के नाम से भी जाना जाता है जिस का शाब्दिक अर्थ "देवों का घर" होता है I </value>
+  </data>
+  <data name="HomeContent2" xml:space="preserve">
+    <value>अनेक पुरानो मे भी बैद्यनाथ धाम का उल्लेख अनेक नमो से आया है जिनमे हरितिकी-वन, केतकी-वन आदि प्रमुख हैं I कहा जाता है की बाबा बैद्यनाथ धाम आने से या इनके स्मरण मात्र करने से ही सभी मनोकामना पूर्ण होती है I &lt;/br&gt; ये ज्योतिर्लिंग राक्षस राज रावन के द्वारा यहाँ लाया गया था अतः इसको रावनेश्वर बैद्यनाथ के नाम से भी पूजा एवम जाना जाता है I&lt;/br&gt;बाबा बैद्यनाथ ज्योतिर्लिंग के बारे मे कहा जाता है की , यह ज्योतिर्लिंग यहाँ राक्षसराज रावण के द्वारा लाया गया था I कहा जाता है की रावण विश्वश्रवा ऋषि और केकसी के पुता और पुलास्था ऋषि के पौत्र थे I इनका पूरा परिवार ही शिव भक्ति मे लीन था और पुरे परिवार पर शिव जी की विशेष कृपा प्राप्त थी, यहाँ तक की स्वर्ण नगरी लंका जो भोलेनाथ ने माता के कहने पर विश्वकर्मा के द्वारा बनवाया था को भी विश्वश्रवा ऋषि को ही दक्षिणा मे दान कर दिया था I जो रावण के द्वारा अधिग्रहित कर लिया था I वहां रावण अपनी माता और भ्रातागणो के साथ रहते थे और दशो दिशाओ मे अपनी पताका लहरा  रहे थे, उनकी माँ केकसी नित्य शिव जी का पूजन करना चाहती थी और इसी इच्छा के साथ समुद्र के किनारे बालू से शिवलिंग बनती थी परन्तु जैसे ही वो उस पर पुष्प अर्पित करना चाहती समुद्र के लहरें शिवलिंग को बहा देती थी
+            इससे वो बहुत दुखी रहा करती थी I जब रावण को ये बात पता चला की माँ को शिव लिंग चाहिये वो कैलाश पर जा पहुचे और घनघोर तपस्या की और भोलेनाथ को खुश कर के वरदान मे उनको ही ज्योतिर्लिंग के रूप मे प्राप्त कर लिया I परन्तु उन्होंने एक शर्त रख दिया की यदि मुझे कही बीच रास्ते में रख दोगे तो मैं आगे नहीं जाऊंगा और वही पर स्थापित हो जाऊंगा
+            और फिर ज्योतिर्लिंग स्वरुप में रावण के सम्मुख मे प्रकट हो गए I जैसे ही रावण ने उनको उठाना कहा माता पार्वती ने उनको रोक कर कहा की हे ज्ञानी विद्वान कुल मे उत्पन्न हुए रावण क्या ज्योतिर्लिंग को बिना आचमन किये ही उठाओगे, तब रावन को आचमन में गंगा और यमुना की बड़ी जलधारा सुक्ष्म रूप में पिला दी I जब रावन बैद्यनाथ ज्योतिर्लिंग को लेके लंका की ओर चला तो उसके अंदर जलधारा ने अपना चमत्कार दिखाना शुरु कर दिया और उसे लघुशंका लगने लगी तब वह जिस जगह रुका था वह देवघर ही था यहाँ विष्णु भगवान ग्वाले के रूप में गाये चारे रहे थे I रावण ने ग्वाले रूपी विष्णु भगवान से कुछ देर के लिए ज्योतिर्लिंग पकड़ने के लिए  कहा और दवाब देने पर कुछ समय के लिए तो स्वीकार कर लिया, परन्तु उन्हों ने भी कहा की यदि मेरी गायें इधर उधर जाने लगेंगी तो मैं तीन बार आवाज़ दूंगा और यदि आप नहीं आये तो मे ज्योतिर्लिंग यही जमीन पर रख दूंगा और जैसे ही रावण लघुसंका के लिए बैठे शिव और विष्णु लीला शुरु हो गयी I गायें इधर उधर जाने लगी और तब ग्वाले रूपी विष्णु भगवान ने तीन बार रावण को आवाज़ लगे और फिर बैद्यनाथ ज्योतिर्लिंग को वही पर रख कर अंतरधयान हो गये
+            जब रावण वहां वापस आये तो बहुत देर हो चुकी थी I उन्होंने बहुत कोशिश की परन्तु वरदान के अनुसार जहाँ भी ज्योतिर्लिंग रखा जाता वही स्थापित हो जाते और इस प्रकार बाबा बैद्यनाथ ज्योतिर्लिंग, उसी जगह रह गये और बैद्यनाथ ने प्रकट होकर रावण को वरदान दिया की उनकी पूजा रावण के नाम के साथ ही होगी और उनको रव्नेश्वेर बैद्यनाथ के नाम से जाना जायेगा I यह मनोकामना लिंग है  जो भी पुरे भक्ति भाव से मेरी पूजा करेगा उसकी मनोकामना अवश्य पूरी होगी I</value>
+  </data>
+  <data name="HomeHeader" xml:space="preserve">
+    <value>बाबा बैद्यनाथ (बारह ज्योतिर्लिंग में से एक)</value>
+  </data>
+  <data name="HomePageImageCaption" xml:space="preserve">
+    <value>« A view of the Jyotirlingam.</value>
+  </data>
+</root>

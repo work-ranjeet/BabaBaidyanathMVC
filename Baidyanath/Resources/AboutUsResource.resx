@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutFailmy" xml:space="preserve">
+    <value>Dwary Family of Baidyanath Dham</value>
+  </data>
+  <data name="AboutUsContent" xml:space="preserve">
+    <value>&lt;b&gt;Shree Jai Kumar&lt;/b&gt; “Pandit  Ji” was born in a Dwary Family on 7th January, 1981.The Dwary family is known as the care-taker of Keys of Baba Baidyanath temple along with all 22 temples in the premises. He is blessed with a caring parent named Shree Jawaher Charan Dwary and Smt. Purnima Devi. He lives at &lt;b&gt;Govind Khaware Lane, BaidyanathDham, Deoghar, Jharkhand, India - 814112.&lt;/b&gt;&lt;/br&gt;&lt;/br&gt;
+
+&lt;b&gt;Shree Jawaher Charan Dwary&lt;/b&gt; , is father of Shree Jai Kumar and offers Kacha Jal Puja “first worship in the early morning” to almighty Baba Baidyanath and sings different Bhajans &amp; mantras in the honor of Baba Baidyanath,Jyotirlingam. .&lt;/br&gt;&lt;/br&gt;
+&lt;b&gt;Smt. Purnima Devi&lt;/b&gt;  “Mai”, is mother of Shree Jai Kumar and the center of the family who usually goes temple with her husband and organize all Puja /Archna . Hard work, dedication, care, and MAA are the words come in our mind once we see or imagine her.  All credit goes to her for making such a beautiful family and group of devotees of Baba Baidyanath. .&lt;/br&gt;&lt;/br&gt;
+
+&lt;b&gt;Late Shree Sharda Charan Dwary&lt;/b&gt; , grandfather of Shree Jai Kumar and who devoted his life in Manav Seva “serving people” and worshiping Shiva and Shakti. In his course of life he provided free education to all needy persons and made many scholars, doctors, engineers etc. He was a linguist and his collection and creation of all research are very rare which is now with his eldest grandson. He observed the interest of his grandson towards his shown path and taught all the lessons of his life. He used to call his grandson by the name of &lt;b&gt;Vaidik Ji.&lt;/b&gt;&lt;/br&gt;&lt;/br&gt;
+&lt;b&gt;Late Shree Chandi Charan Dwary Panda&lt;/b&gt; , grand grand-father of Shree Jai Kumar and who was a great devotee of Baidyanath) .&lt;/br&gt;&lt;/br&gt;
+ 
+
+&lt;b&gt;Late Babu Pandit Gauri Charan Dwary&lt;/b&gt; , Grand grand-grand-father of  Shree Jai Kumar and was the Biggest Tirth Purohit of Baidyanath Dham of his era / period in matter of number of Jajmans / pupils, assets, position in society etc. He was a great saint, social servant, simple living personality, and a helpful person, who devoted his whole life for the service of Baba Baidyanath and Baidyanath Followers. .&lt;/br&gt;&lt;/br&gt;
+
+With respect of the educational qualification Shree Jai Kumar, he is an M.Sc. degree holder with 1st Class and also completed his B.Ed. with 70%. He studies SADHYA- VANDANA, SHUKLA YAJUR VEDA, RUDRA ASTA DHAYAYI, KARMA KANDA, GITA, etc. He offers all types of Yagya, Anushthan and Puja etc for the welfare of devotees and Baidyanath followers. He has devoted his life for Baba Baidyanath and Baidyanath Devotees. .&lt;/br&gt;&lt;/br&gt;
+
+He resides at Baidyanath Dham and helps, assists and organizes  Puja / Worship, Rudrabhisek, Jap, Chandi Path (Durga Saptasati Path), Maha Mritunjay Jap, along with other Puja Anusthans for completion and fulfilling the wishes and desires of Baidyanath / Shiva’s followers, who say or want to be assisted / directed by him.</value>
+  </data>
+  <data name="AboutUsContent2" xml:space="preserve">
+    <value>Dwary family is originated from Sardar panda Family “head of the temples”, bifurcated from 11th sardar panda, and got the Keys of Baba Baidyanath Temple along with all 22 temples in Temple premises; due to this we are called Dwary.</value>
+  </data>
+  <data name="AboutUsHeader" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+</root>

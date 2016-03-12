@@ -1,0 +1,28 @@
+﻿@model Baidyanath.Models.LanguageSwitcher.Language
+
+
+
+@using (Html.BeginForm("SwitchLanguage", "LanguageSwitcher", new {  ReturnUrl = ReturnUrl()}))
+{   <div class="languageDiv">
+    @Html.DropDownList("SelectedOption", Model.SelectOptions, new { onchange = "this.form.submit();", @class = "outer_shadow2" })
+    </div>
+   
+}
+
+@functions
+{
+    public string ReturnUrl()
+    {
+        string Action = Convert.ToString(ViewContext.RouteData.Values["Action"]);
+        string Controller = Convert.ToString(ViewContext.RouteData.Values["Controller"]);
+        string QueryString = string.Empty;
+        switch (Action)
+        {
+            case "LatestPostDetail":
+                QueryString = Request.QueryString["InformationID"];
+                break;
+        }
+
+        return Action + "," + Controller + "," + QueryString;
+    }
+}

@@ -1,0 +1,130 @@
+﻿@model Baidyanath.Models.Account.UserRegistrationModel
+@using Baidyanath.Resources
+@using System.Web.UI.WebControls
+
+@{
+    ViewBag.Title = "UserRegisteration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Header {
+    @Baidyanath.Resources.Resource.MenuMembership
+}
+<section class="UserRegistration">
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        var GenderlistItems = new List<ListItem>
+    {
+          new ListItem { Text = Resource.Male, Value="M" },
+          new ListItem { Text = Resource.Female, Value="F" },
+          new ListItem { Text = Resource.NA, Value="N" }
+    };
+     
+        <fieldset style="border: 0px;">
+            <legend></legend>
+            <section class="registrationSection contentShadow">
+                <table>
+                    <tr style="height: 20px;">
+                        <td></td>
+                        <td>@Html.ValidationMessageFor(model => model.UserID)</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">@Html.LabelFor(model => model.UserID)&nbsp;</td>
+                        <td>@Html.TextBoxFor(model => model.UserID, new { maxlength = 100, @style = "width:80%;" })</td>
+                    </tr>
+                    <tr style="height: 20px;">
+                        <td></td>
+                        <td>@Html.ValidationMessageFor(model => model.Email)</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">@Html.LabelFor(model => model.Email)&nbsp;</td>
+                        <td>@Html.TextBoxFor(model => model.Email, new { maxlength = 100, @style = "width:80%;" })</td>
+                    </tr>
+                    <tr style="height: 20px;">
+                        <td></td>
+                        <td>@Html.ValidationMessageFor(model => model.FirstName)</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">@Html.LabelFor(model => model.FirstName)&nbsp;</td>
+                        <td>@Html.TextBoxFor(model => model.FirstName, new { maxlength = 100, @style = "width:80%;" })</td>
+                    </tr>
+                    <tr style="height: 20px;">
+                        <td></td>
+                        <td>@Html.ValidationMessageFor(model => model.MiddleName)</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">@Html.LabelFor(model => model.MiddleName)&nbsp;</td>
+                        <td>@Html.TextBoxFor(model => model.MiddleName, new { maxlength = 100, @style = "width:80%;" })</td>
+                    </tr>
+                    <tr style="height: 20px;">
+                        <td></td>
+                        <td>@Html.ValidationMessageFor(model => model.LastName)</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">@Html.LabelFor(model => model.LastName)&nbsp;</td>
+                        <td>@Html.TextBoxFor(model => model.LastName, new { maxlength = 100, @style = "width:80%;" })</td>
+                    </tr>
+                    <tr style="height: 20px;">
+                        <td></td>
+                        <td>@Html.ValidationMessageFor(model => model.Password)</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">@Html.LabelFor(model => model.Password)&nbsp;</td>
+                        <td>@Html.PasswordFor(model => model.Password, new { maxlength = 200, @style = "width:80%;" })</td>
+                    </tr>
+                    <tr style="height: 20px;">
+                        <td style="text-align: right;"></td>
+                        <td>@Html.ValidationMessageFor(model => model.CnfPassword)</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">@Html.LabelFor(model => model.CnfPassword)&nbsp;</td>
+                        <td>@Html.PasswordFor(model => model.CnfPassword, new { maxlength = 200, @style = "width:80%;" })</td>
+                    </tr>
+                    <tr style="height: 20px;">
+                        <td></td>
+                        <td>@Html.ValidationMessageFor(model => model.Dob)</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">@Html.LabelFor(model => model.Dob)&nbsp;</td>
+                        <td>@Html.TextBoxFor(model => model.Dob, new { maxlength = 10, @style = "width:60%;" })</td>
+                    </tr>
+                    <tr style="height: 20px;">
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">@Html.LabelFor(model => model.Gender)&nbsp;</td>
+                        <td>@Html.DropDownListFor(model => model.Gender, new SelectList(GenderlistItems, "Value", "Text"))</td>
+                    </tr>
+                    <tr style="height: 20px;">
+                        <td></td>
+                        <td>@Html.ValidationMessageFor(model => model.Mobile)</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">@Html.LabelFor(model => model.Mobile)&nbsp;</td>
+                        <td>@Html.TextBoxFor(model => model.Mobile, new { maxlength = 10, style = "width: 120px;" })</td>
+                    </tr>
+                    <tr style="height: 20px;">
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">@Html.LabelFor(model => model.IsMarried)&nbsp;</td>
+                        <td>@Html.RadioButtonFor(model => model.IsMarried, Resource.Single, new { @checked = "checked" })@Resource.Single @Html.RadioButtonFor(model => model.IsMarried, Resource.Married, false)@Resource.Married</td>
+                    </tr>
+                    <tr style="height: 20px;">
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr style="height: 20px;">
+                        <td></td>
+                        <td >
+                            <input type="submit" value="@Resource.SignUp" /></td>
+                    </tr>
+                </table>
+            </section>
+        </fieldset>
+    }
+</section>

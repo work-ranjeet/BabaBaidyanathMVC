@@ -1,0 +1,65 @@
+﻿@using Baidyanath.Resources
+@using Baidyanath.Extension
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Scripts.Render("~/bundles/jquery")
+    @Styles.Render("~/Content/css")
+    <link href="~/Areas/Admin/Content/Admin.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="PageContainer">
+        <div class="Page outer_shadow">
+           @* <header>
+                <section id="home-Language-Section" style="width: 100%; height: 40px; vertical-align: bottom;">
+                    @{Html.RenderPartial("LoginButtonPartial");}
+                </section>
+                <section class="HeaderImage inner_shadow">
+                    @{Html.RenderPartial("ScrollingMantraPartial");}
+                    @{Html.RenderPartial("HeaderImagePartial");}
+                </section>
+            </header>*@
+            <menu class="AdminMenu">
+                @{Html.RenderPartial("~/Areas/Admin/Views/Shared/AdminMenuPartial.cshtml");}
+            </menu>
+            <section id="body" class="body-content inner_shadow">
+                <table style="width: 100%; height: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td style="vertical-align: top;">
+                            <section class="bodysection">
+                                @RenderBody()
+                            </section>
+                        </td>
+
+                    </tr>
+                </table>
+            </section>
+            <footer>
+               @* @{Html.RenderPartial("FooterPartial");}*@
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
+
+@*<script>
+    $(document).ready(function () {
+
+        // Default for header panel
+       // $("#headerpannel > div:gt(0)").hide();
+
+        // Setting interval and transition effect
+        //setInterval(function () {
+           // $('#headerpannel > div:first').fadeOut(1000).next().fadeIn(2000).end().appendTo('#headerpannel');
+        //}, 10000);
+    });
+
+
+</script>*@

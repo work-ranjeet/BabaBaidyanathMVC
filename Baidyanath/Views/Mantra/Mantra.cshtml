@@ -1,0 +1,81 @@
+﻿@model IEnumerable<Baidyanath.Helper.MantraEntity>
+@using System.Threading
+@using Baidyanath.Extension
+@using Baidyanath.Helper
+@using System.Collections.Concurrent
+
+
+@{
+    ViewBag.Title = "Mantra";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="MantraPage">
+    @using (Html.BeginForm())
+    {       
+                    
+        <div class="subContent" style="text-align:left; padding-left:5px; padding-top:2px; color:white;">
+             @Html.ActionLink(Baidyanath.Resources.Resource.MenuMantras + " »» ", "MantraByParentID", new { ParentID = 0 })
+           
+        </div>
+        <div class="content @(Thread.CurrentThread.CurrentCulture.Name == "hi-IN" ? "contentHindi" : "")">
+                     @if (Model.Count() <= 1)
+            {
+                @section Header { <div class="headingHindi"> @Model.FirstOrDefault().MantraTitleInd</div>}
+                <section style="padding-top: 15px;">
+                    @Html.Literal(Model.FirstOrDefault().MantraInformationInd)
+                </section>
+            }
+            else
+            {
+                @section Header {@Baidyanath.Resources.Resource.MenuMantras }
+                <section style="padding-top: 5px;">
+                    <table style="width: 100%; border: 5px; margin-top: 5px;">
+                        <colgroup>
+                            <col style="width: 25%;" />
+                            <col style="width: 25%;" />
+                            <col style="width: 25%;" />
+                            <col style="width: 25%;" />
+                        </colgroup>
+                        @for (int i = 0; i < Model.Count(); )
+                        {
+                            <tr>
+                                @for (int j = 0; j < 4; j++, i++)
+                                {
+                                    if (i < Model.Count())
+                                    {
+                                    <td style="border: 5px;">
+                                        <section style="padding: 5px;" class="inner_shadow">
+                                            @if (Model.OrderBy(v => v.MantraOrder).ElementAt(i).ChildCount > 0)
+                                            { 
+                                                <a href="/MVCApp/Mantra/MantraByParentID?ParentID=@Model.OrderBy(v => v.MantraOrder).ElementAt(i).MantraID">
+                                                    <div class="MantraTitle">
+                                                        @(Model.OrderBy(v => v.MantraOrder).ElementAt(i).MantraTitleInd)
+                                                    </div>
+                                                    <div class="childCount">@(Model.OrderBy(v => v.MantraOrder).ElementAt(i).ChildCount)</div>
+                                                </a> 
+                                            }
+                                            else
+                                            {
+                                                <a href="/MVCApp/Mantra/MantraDescription?MantraID=@Model.OrderBy(v => v.MantraOrder).ElementAt(i).MantraID">
+                                                    <div class="MantraTitle">
+                                                        @(Model.OrderBy(v => v.MantraOrder).ElementAt(i).MantraTitleInd)
+                                                    </div>
+                                                    <div class="childCount" style="background-color:@(string.IsNullOrEmpty(Model.OrderBy(v => v.MantraOrder).ElementAt(i).MantraInformationInd) ? "red" : "green");">
+                                                        @(Model.OrderBy(v => v.MantraOrder).ElementAt(i).ChildCount)
+                                                    </div>
+                                                </a> 
+                                            }
+
+                                        </section>
+                                    </td>
+                                    }
+                                }
+                            </tr>                    
+                        }
+                    </table>
+                </section>
+            }
+        </div>     
+        
+    }
+</div>

@@ -1,0 +1,8 @@
+﻿@model string totalhit
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+   <span> @Model.FirstOrDefault()</span>
+}

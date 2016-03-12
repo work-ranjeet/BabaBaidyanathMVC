@@ -1,0 +1,74 @@
+﻿@model Baidyanath.Models.Account.UserProfileBasicModel
+@using System.Web.UI.WebControls
+@using Baidyanath.Resources
+@using (Ajax.BeginForm("UserBasicProfileEditPartial", "Account", FormMethod.Post, null))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    var GenderlistItems = new List<ListItem>
+    {
+          new ListItem { Text = Resource.Male, Value="M" },
+          new ListItem { Text = Resource.Female, Value="F" },
+          new ListItem { Text = Resource.NA, Value="N" }
+    };
+    <div>
+        <span class="heading">@Resource.UserProfileBasicDetails &nbsp;</span>
+        @Html.HiddenFor(model => model.UserID)
+        <span id="EditBasicCloseButton" style="float:right; color:red; cursor:pointer; font-weight:800;font-size:larger;">X</span>
+    </div>
+    <hr />
+    <div>
+        <table>
+            <colgroup>
+                <col style="width: 45%;" />
+                <col style="width: 25%;" />
+                <col style="width: 30%;" />
+            </colgroup>
+            <tr>
+                <td style="text-align: right;"><span>@Resource.FirstName </span></td>
+                <td>@Html.TextBoxFor(model => model.FName, new { @style = "width:100%;" })</td>
+                <td>&nbsp;&nbsp;@Html.ValidationMessageFor(model => model.FName)</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><span>@Resource.MiddleName </span></td>
+                <td>@Html.TextBoxFor(model => model.MName, new { @style = "width:100%;" })</td>
+                <td>&nbsp;&nbsp;@Html.ValidationMessageFor(model => model.MName)</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><span>@Resource.LastName </span></td>
+                <td>@Html.TextBoxFor(model => model.LName, new { @style = "width:100%;" })</td>
+                <td>&nbsp;&nbsp;@Html.ValidationMessageFor(model => model.LName)</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><span>@Resource.UserProfileDateOfBirth</span></td>
+                <td>@Html.TextBoxFor(model => model.DateOfBirth)</td>
+                <td>&nbsp;&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><span>@Resource.UserProfileGender</span></td>
+                <td>@Html.DropDownListFor(model => model.Gender, new SelectList(GenderlistItems, "Value", "Text"))</td>
+                <td>&nbsp;&nbsp;@Html.ValidationMessageFor(model => model.Gender)</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><span>@Resource.UserProfileMarriedStatus</span></td>
+                <td>
+                    @Html.RadioButtonFor(model => model.MariedStatus, Resource.Single, Model.MariedStatus == "0" ? new { Checked = "checked" } : null)@Resource.Single
+                    @Html.RadioButtonFor(model => model.MariedStatus, Resource.Married, Model.MariedStatus == "1" ? new { Checked = "checked" } : null)@Resource.Married
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><span>@Resource.UserProfileHoroScope </span></td>
+                <td>@Html.TextBoxFor(model => model.SunShine, new { @style = "width:100%;" })</td>
+                <td>&nbsp;&nbsp;@Html.ValidationMessageFor(model => model.SunShine)</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="text-align: right;">
+                    <input type="submit" value="Update" /></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+  
+}

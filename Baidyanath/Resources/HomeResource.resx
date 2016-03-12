@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="HomeContent" xml:space="preserve">
+    <value>&lt;strong&gt;Baba Baidyanath&lt;/strong&gt; is one of the twelve &lt;b&gt;JYOTIRLINGAM&lt;/b&gt;  of  &lt;b&gt;lord Shiva&lt;/b&gt;. This Jyotirlingam is famous among devotees of India and other countries. The temple of Baidyanath Dham jyotirlingam is situated in Deoghar district of Santhal-Parganas area of Jharkhand state of India. Baba Baidyanath fulfill all desire of devotees, hence called as MANOKAMNA-LINGAM. Beside this Baidyanath is also known as ATMA-LINGAM, MAGESHWER-LINGAM, KAMNA-LINGAM,</value>
+  </data>
+  <data name="HomeContent2" xml:space="preserve">
+    <value>RAVNESHWER-BAIDYANATH, MARG- TATPURUSH, &amp; BAIJNATH.Baidyanath dham is also called as Deoghar means abode / home of Gods. &lt;/br&gt;Baidyanath dham is also well renounced in different Purans by various names like HERETIC-VAN, KETEKI-VAN etc.Being here or only by reciting the name of BABA BAIDYANATH, all wishes &amp; desires become fulfill. This jyotirlingam is brought here by demon king Ravan, hence also worshiped as RAVNESHWER BAIDYANATH.&lt;br/&gt;&lt;/br&gt;This Place of &lt;b&gt;Baba Baidyanath&lt;/b&gt; is one of the important &lt;b&gt;SIDDHA-PITHA&lt;/b&gt; On the earth. It is Said in Purans that &lt;b&gt;Heart of Mother Sati&lt;/b&gt;  was fallen here hence this place is also known as &lt;b&gt;HRIDYA- PITHA&lt;/b&gt;.It is also described in Purans that funeral of Mata Sati was done here hence Deoghar is also called as &lt;b&gt;CHITA BHUMI&lt;/b&gt;.&lt;/br&gt; Baba Baidyanath jyotirlingam was brought here by demon king Ravana, who was son of saint Vishwasharawa and Kaikasi, and grandson of saint Poulastha. His whole family was engaged in devotion of LORD SHIVA. Special blessings were on the entire family. Even the gold palace lanka, which was built by architectural Lord Vishwakarma on the demand of Maa Parwati and instruction of almighty shiva was gifted to the Saint Vishwasharawa &amp; which was later captured by Ravan. He used to live there with his mother and brothers. His mother Keksi wants to worship shiva and daily try to make Shivlingam of sand near the sea but as soon as she wants to offer flowers on Shivlingam, waves flows away the Shivlingam. She was too much disappointed because of that. When Ravan came to know about this fact that his mother wants to pray Shivlingam, he went  to kailash mountain and started worshiping lord shiva. He recited Shiva mantra and cuts his own head ten times to please the lord Shiva. Ultimately he got Shiva as in the form of jyotirlingam in boon. Shiva kept one condition that if he keep Baidyanath jyotirlingam in the pathway, Joytirlingam will remain there forever. After that Lord Shiva blessed Ravan with Baidyanath jyotirlingam . As soon as Ravna wanted to lift that jyotirlingam, maa Parwati asked him that “o great scholar Ravan will you lift up jyotirlingam without aachman” (soul purification). Then she offered him to drink large wave of ganga and yamuna river in small form. After that Ravan lift up jyotirlingam and started his journey toward Lanka by now the wave of ganga and yamuna started to show its magic and Ravan felt to discharge urine and the place where he stopped, it was DEOGHAR. Here Lord Vishnu was already present in the form of Sheppard with his cattle. Ravan told that shepherd to hold jyotirlingam for some time and after some request he accepted to keep that jyotirlingam. Lord Vishnu as shepherd told him that if his cattle become scattered he will call him three times and if he will not come to take his jyotirlingam back, he will keep it on the earth. As soon as Ravan started to discharge the urine the magic of lord Shiva and lord Vishnu started, cattle scattered here and there and shepherd (lord vishnu) called Ravan three time and when Ravan didn’t came then he kept the Baidyanath Jyotirlingam on earth and become vanished. When Ravan came back, it was too late. He tried to lift the Jyotirlingam , but according to the condition the jyotirlingam was to fix where it has to keep on the earth . After that lord Baidyanath present before Ravan and said him that he is very pleased with Ravan and again bless him that now Baidyanath will be called as RAVANNESHWER BAIDYANATH and this is desire / wish fulfilling lingam who ever worship me with complete devotion, his wishes &amp; desires will be fulfilled.</value>
+  </data>
+  <data name="HomeHeader" xml:space="preserve">
+    <value>Baba Baidyanath( One of Twelve Jyotirlingam)</value>
+  </data>
+  <data name="HomePageImageCaption" xml:space="preserve">
+    <value>A view of the Jyotirlingam.</value>
+  </data>
+</root>

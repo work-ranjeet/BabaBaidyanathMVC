@@ -1,0 +1,27 @@
+﻿@using Baidyanath.Extension
+
+@{
+    ViewBag.Title = "Home Page";
+   
+}
+@section Header {
+    @Baidyanath.Resources.HomeResource.HomeHeader
+}
+
+<div class="homePage ">
+
+
+    <div id="dafaultPageImageDiv" class="ImageDiv outer_shadow2" style="float: left;">
+        <img runat="server" id="HomeShivaImage" src="~/Content/images/ShivLing/shivling.jpg "/>
+        <figcaption class="imgCaption">@Baidyanath.Resources.HomeResource.HomePageImageCaption</figcaption>
+    </div>
+
+    <div style="float: right; width: 58%;" class="content @(System.Threading.Thread.CurrentThread.CurrentCulture.Name == "hi-IN" ? "contentHindi" : "")">
+        @Html.Literal(Baidyanath.Resources.HomeResource.HomeContent)
+    </div>
+    <div style="clear: both"></div>
+    <div class="content @(System.Threading.Thread.CurrentThread.CurrentCulture.Name == "hi-IN" ? "contentHindi" : "")">
+         <article>@Html.Literal(Baidyanath.Resources.HomeResource.HomeContent2)</article>
+    </div>
+   
+</div>

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="HowToReach" xml:space="preserve">
+    <value>बाबा धाम पहुँचने के लिए</value>
+  </data>
+  <data name="HowToReachContent" xml:space="preserve">
+    <value>&lt;b&gt;By Rail&lt;/b&gt; :- The nearest railway station is Baidyanath Dham (Deoghar) which is a terminal station of a 7 km branch line originating at Jasidih Jn. On the Howrah-Delhi main line. Apart from local trains on the branch line trekkers (type of jeep) taking in passengers on a per person fare basis and auto rickshaws are available. Auto-Rickshaws are available frequently just outside the Jasidih railway station. They charge Rs 8 per person in a shared auto and up to Rs 60 in a reserved auto. However, due to recent incident of falling of the road bridge that connects Jasidih to Deoghar, the auto rickshaws take alternate longer route thus charge about Rs.15 per person and up to Rs 100 in reserved. The best means to get to deoghar is the local up-down train available every few hours at Jasidih Railway station on Platform No. 4
+
+&lt;p&gt;&lt;b&gt;By Road&lt;/b&gt; - Deoghar is approachable from - Kolkata 373 km, Giridih 60 km,  Patna 281 km,  Dumka 67 km,  Madhupur 30km,   Ranchi 250 km,  Shimultala 53 km and other places.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Regular buses are available from surrounding towns.&lt;/p&gt;</value>
+  </data>
+  <data name="PlaceToVisitContent" xml:space="preserve">
+    <value>&lt;b&gt;1. Shiv Ganga Pond: &lt;/b&gt;It is located in north of Baidyanath Dham Temple. Devotee’s take bath before worship almighty Baba Baidyanath.  &lt;p&gt;&lt;b&gt;2. Nandan Pahar / hill&lt;/b&gt; – It is located at 3 Km west from Baidyanath Dham Temple. Here a beautiful park is present for entertainment for children as wel as their parents / guardians. &lt;/p&gt;  &lt;p&gt;&lt;b&gt;3. Trikut Hill / Pahar&lt;/b&gt; – It is located 18 Km East from Baidyanath Dham Temple. It have its own Natural beauty along with Rope-Way for entertainment. &lt;/p&gt;  &lt;p&gt;&lt;b&gt;4. Tapowan&lt;/b&gt; - It is located 9 Km East from Baidyanath Dham Temple. And Holi Place of Maharishi Balanand Swami. &lt;/p&gt;  &lt;p&gt;&lt;b&gt;5. Naulakha Mandir&lt;/b&gt; - It is located at 3 Km South-East from Baidyanath Dham Temple. Here Famous Temple Of Radha–Krishna is Present was build earlier. &lt;/p&gt;  &lt;p&gt;&lt;b&gt;6. Nav Durga Mandir&lt;/b&gt; - It is located at 3 Km South from Baidyanath Dham Temple. Here Famous Temple of Maa Durga is Present. Here The Nine forms Of Maa Durga Is Printed. &lt;/p&gt;  &lt;p&gt;&lt;b&gt;7. Pagal Baba Mandir&lt;/b&gt; - It is located 9 Km West from Baidyanath Dham Temple and 2 Km from Jasidih Railway Station. &lt;/p&gt;  &lt;p&gt;&lt;b&gt;8. Harila Jori&lt;/b&gt; - It is located at 3 Km North from Baidyanath Dham Temple. &lt;/p&gt;  &lt;p&gt;&lt;b&gt;9. Kali Dham, Pathrol&lt;/b&gt; - 53 km on bus route towards Madhupur via Sarath. Beautiful temple with nine more beautiful temples around the Main Kali Temple which was built by Raja Dig Vijay Singh, 6 to 7 centuries ago. &lt;/p&gt;  &lt;p&gt;&lt;b&gt;10. Basakinath Temple (42 km) :- &lt;/b&gt; Famous for Shiva Temple &lt;/p&gt;  &lt;p&gt;&lt;b&gt;11. Muloti (Village of temples, Near Dumka) &lt;/b&gt; - about 80 km &lt;/p&gt;  &lt;p&gt;&lt;b&gt;12. Massanjore Dam&lt;/b&gt; - 98 km. &lt;/p&gt;  &lt;p&gt;&lt;b&gt;13. Rikhiya Ashram&lt;/b&gt; - 7 Km south from Baidyanath Dham Temple &lt;/p&gt;  &lt;p&gt;&lt;b&gt;14. Prabhu Jagadbandhu Ashrama &lt;/b&gt;- 4 km from Deoghar, on the way to Tapovan, near Charki Pahari crossing - for short stay in a cool, pristine environment with monks and other ashramiks. &lt;/p&gt;  &lt;p&gt;&lt;b&gt;15. Ramakrishna Mission Vidyapith&lt;/b&gt;&lt;/p&gt;  &lt;p&gt;&lt;b&gt;16. Jain Mandir&lt;/b&gt; - 1/2 Km&lt;/p&gt;  &lt;p&gt;&lt;b&gt;17. Tara Pith Mandir (One of Shakti Pitha) &lt;/b&gt;- 125 Km&lt;/p&gt;  &lt;p&gt;&lt;b&gt;18. Aarogya Bhawan&lt;/b&gt; - 7 Km&lt;/p&gt;  &lt;p&gt;&lt;b&gt;19. Pathrol Kali mandir &lt;/b&gt;- 40 Km&lt;/p&gt;</value>
+  </data>
+  <data name="PlaceToVisitDeoghar" xml:space="preserve">
+    <value>देवघर में यात्रा करने के लिए जगह</value>
+  </data>
+</root>

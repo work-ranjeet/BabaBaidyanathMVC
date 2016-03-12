@@ -1,0 +1,44 @@
+﻿@using Baidyanath.Extension
+@{
+    ViewBag.Title = "Tourism";
+}
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery-1.8.2.intellisense.js"></script>
+<div class="TourismPage ">
+    @section Header {
+        @Baidyanath.Resources.Resource.MenuTourism
+    }
+    <div class="radioButtonController">
+        <input type="radio" name="TourismType" id="PlaceToVisitContent" value="PlaceToVisitContent" checked="checked" />@Baidyanath.Resources.TourismResource.PlaceToVisitDeoghar
+        &nbsp;&nbsp; &nbsp; &nbsp;        
+        <input type="radio" name="TourismType" id="HowToReachContent" value="HowToReachContent" />@Baidyanath.Resources.TourismResource.HowToReach
+    </div>
+    <div class="content @(System.Threading.Thread.CurrentThread.CurrentCulture.Name == "hi-IN" ? "contentHindi" : "")">
+        <article>
+            <div id="Article">
+                @Html.Literal(Baidyanath.Resources.TourismResource.PlaceToVisitContent)
+            </div>
+        </article>
+
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('input[type=radio][name=TourismType]').change(function () {
+            $.ajax({
+                url: '@Url.Action("Tourism", "Tourism")',
+                type: 'POST',
+                data: { TourismType: this.value },
+                dataType: 'JSON',
+                success: function (data) {
+                    $("#Article").html(data);
+                },
+                error: function (error) {
+                    debugger;
+                    alert(error);
+                }
+
+            });
+        });
+    });
+</script>

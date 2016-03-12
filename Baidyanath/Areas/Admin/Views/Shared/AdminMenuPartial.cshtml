@@ -1,0 +1,14 @@
+﻿@using Baidyanath.Resources
+<ul id="menu">
+    <li class="@(Convert.ToString(ViewContext.RouteData.Values["Controller"]) == "AdminHome" && Convert.ToString(ViewContext.RouteData.Values["Action"]) == "Index" ? "active" : "")">
+        @Html.ActionLink("Home Page", "Index", "AdminHome")
+    </li>
+
+    <li class="@(Convert.ToString(ViewContext.RouteData.Values["Controller"]) == "Album" && Convert.ToString(ViewContext.RouteData.Values["Action"]) == "Index" ? "active" : "")">
+        @Html.ActionLink("Album", "Index", "Album")
+
+    </li>
+    <li>
+        @Resource.MenuMantras
+    </li>
+</ul>

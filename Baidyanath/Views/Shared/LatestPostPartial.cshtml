@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Baidyanath.Helper.InformationEntity>
+
+
+<div class="latestUpdateBackground"></div>
+<div class="latestUpdateText">
+    <div class="latestPostHeading">
+        @Baidyanath.Resources.Resource.LatestPost
+    </div>
+    <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="2" scrolldelay="100" behavior="scroll">
+        @if (System.Threading.Thread.CurrentThread.CurrentCulture.Name == "hi-IN")
+        {
+            foreach (var item in Model)
+            {
+                @Html.ActionLink(item.InfTitleInd, "LatestPostDetail", "Information", new { @class = "marqueeText", InformationID = item.InformationID }, null)  
+            }
+        }
+        else
+        {
+            foreach (var item in Model)
+            {
+                @Html.ActionLink(item.InfTitle, "LatestPostDetail", "Information", new { @class = "marqueeText", InformationID = item.InformationID }, null)  
+            }
+        }
+                                              
+    </marquee>
+</div>
+
+

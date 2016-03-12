@@ -1,0 +1,63 @@
+﻿@model Baidyanath.Models.Account.UserLoginModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Header {
+    @Baidyanath.Resources.Resource.MemberLogin
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+   
+    <div class="loginPage noTextContent">
+        <section style="width: 400px; margin: auto;">
+            <div style="height: 20px; margin-left: 5px; text-align:center;">
+                <bdi class="field-validation-error">@(ViewData.ModelState.ContainsKey("LoginError") ? (ViewData.ModelState["LoginError"].Errors).FirstOrDefault().ErrorMessage : "")</bdi>
+            </div>
+            <fieldset class="contentShadow" style="border: 0px;">
+                <legend></legend>
+                <table class="loginSection">
+                    <tr style="height: 20px;">
+                        <td></td>
+                        <td>@Html.ValidationMessageFor(model => model.UserName)</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">@Html.LabelFor(model => model.UserName)&nbsp;&nbsp;</td>
+                        <td>@Html.TextBoxFor(model => model.UserName, new { @style = "width:100%;" })</td>
+                    </tr>
+                    <tr style="height: 20px;">
+                        <td></td>
+                        <td>@Html.ValidationMessageFor(model => model.Password)</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">@Html.LabelFor(model => model.Password)&nbsp;&nbsp;</td>
+                        <td>@Html.PasswordFor(model => model.Password, new { @style = "width:100%;" })</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 20px;"></td>
+                        <td>@Html.CheckBoxFor(model => model.RememberMe)&nbsp;&nbsp;@Html.LabelFor(model => model.RememberMe)</td>
+                    </tr>
+
+                    <tr>
+
+                        <td colspan="2" style="text-align: right;">
+                            <input id="submitButton" type="submit" value="@Baidyanath.Resources.Resource.Login" />
+                        </td>
+
+                    </tr>
+                </table>
+            </fieldset>
+            <p>
+                @Html.ActionLink("Register", "UserRegisteration","Account") if you don't have an account.
+            </p>
+        </section>
+    </div>
+  
+
+}
+

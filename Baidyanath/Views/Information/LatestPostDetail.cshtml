@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Baidyanath.Helper.InformationEntity>
+@using Baidyanath.Extension
+@{
+    ViewBag.Title = "LatestPostDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="LatestPostPage ">
+    @if (Model.Count() > 0)
+    {
+        if (System.Threading.Thread.CurrentThread.CurrentCulture.Name == "hi-IN")
+        {
+        @section Header {
+            @Html.Literal(Model.FirstOrDefault().InfTitleInd)
+        }
+        <div class="content contentHindi">
+            <article>
+                <div id="ArticleInd">
+                    @Html.Literal(Model.FirstOrDefault().InformationInd)
+                </div>
+            </article>
+
+        </div>
+        }
+        else
+        {
+        @section Header {
+            @Html.Literal(Model.FirstOrDefault().InfTitle)
+        }
+        <div class="content">
+            <article>
+                <div id="Article">
+                    @Html.Literal(Model.FirstOrDefault().Information)
+                </div>
+            </article>
+
+        </div>
+        }
+    }
+    else
+    {
+        <div>
+            @Html.ActionLink("Refresh Me", "Index", "Home")
+        </div>
+    }
+
+</div>

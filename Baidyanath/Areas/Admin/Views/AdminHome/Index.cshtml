@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<section class="HomeSubMenu">
+    <section style="float: left; width: 200px; height: 500px; border-right: 1px solid #808080;">
+        <ul id="menu">
+            <li class="">
+                <div>Your Image</div>
+            </li>
+            <li class="">
+                <div>About Image</div>
+            </li>
+            <li class="">
+                <div>Left Add</div>
+            </li>
+            <li class="">
+                <div>Right Add</div>
+            </li>
+        </ul>
+    </section>
+    <section style="float: right; width: 95%;"></section>
+    <section style="clear: both;"></section>
+</section>
+
+<style>
+    .HomeSubMenu ul
+    {
+        font-size: 14px;
+        margin-left: -18px;
+    }
+
+        .HomeSubMenu ul > li
+        {
+            list-style: none;
+            height: 12px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            padding-left: 1px;
+            padding-bottom: 10px;
+            text-align: left;
+        }
+
+    .HomeSubMenu > ul > li > a
+    {
+        color: #4e4e4e;
+    }
+
+    .HomeSubMenu > ul > li:hover > a,
+    .HomeSubMenu > ul > li:hover
+    {
+        color: white;
+    }
+
+        .HomeSubMenu > ul > li:hover > ul
+        {
+            display: block;
+        }
+
+
+
+    .HomeSubMenu > ul > li.active
+    {
+        color: white;
+        height: 26px;
+        font-weight: bold;
+        box-shadow: inset 0px -10px 9px rgb(71, 129, 181); /*6bb7e2*/
+        box-shadow: inset 0px -10px 9px rgb(71, 129, 181);
+        box-shadow: inset 0px -10px 9px rgb(71, 129, 181);
+    }
+
+        .HomeSubMenu > ul > li.active > a
+        {
+            color: white;
+            height: 23px;
+        }
+
+    /*.HomeSubMenu > ul > li .languageDiv
+    {
+        width: 75px;
+        margin-left: 17px;
+    }
+
+        .HomeSubMenu > ul > li .languageDiv > select
+        {
+            height: 20px;
+            margin-top: -1px;
+        }*/
+</style>

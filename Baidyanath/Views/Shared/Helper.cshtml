@@ -1,0 +1,67 @@
+﻿@using Baidyanath.Resources
+@helper HelperName(string name)
+{
+    // your helper can contain code and/or markup, e.g.
+    // var msg = "Hello " + name;
+    // <p>@msg</p>
+    // For more information, visit http://go.microsoft.com/fwlink/?LinkID=204658
+}
+<div id="slidingHeader">
+    <div id="TopPanel" class="slidingTopPanel">
+        <div id="Panel" class="slidingPanel outer_shadow">
+            <div style="float: left;">
+                <h3>@(Request.IsAuthenticated ? "." : Resource.NotAMemberYetSignUp)</h3>
+                <div class="inner_shadow userRegistrationContent allRoundCorner">
+                    <div class="shadow_content">
+                        @if (Request.IsAuthenticated) { }
+                        else
+                        {
+                            { Html.RenderPartial("~//views//account//UserRegisteration.cshtml", new Baidyanath.Models.Account.UserRegistrationModel()); }
+                        }
+                    </div>
+                </div>
+            </div>
+            <div style="width: 260px; float: right; height: 200px; color: white;">
+                <div>
+                    <h3>@Resource.MemberLogin</h3>
+                </div>
+                <div class="inner_shadow loginContent allRoundCorner">
+                    @{Html.RenderPartial("~//views//account//Login.cshtml", new Baidyanath.Models.Account.UserLoginModel());}
+                </div>
+                <div class="inner_shadow forgetChangePassword allRoundCorner">
+                    <span id="ForgetPassword" style="cursor: pointer;">@Resource.ForgetPassword</span>
+                    <span id="ChangePassword" style="float: right; cursor: pointer;">@Resource.ChangePassword</span>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="sliderVisibleDiv outer_shadow">
+            <div style="float: left; margin-right: 2px;">
+                @if (TempData["LogOnError"] != null)
+                {
+                    <span>@TempData["LogOnError"] &nbsp; @Resource.TryAgain</span>  
+                }
+                else
+                {
+                    <div style="float: left; text-align: left;">
+                       @* <strong style="padding-left: 3px;">
+                            @Resource.Welcome @(Request.IsAuthenticated ? Html.Encode(User.Identity.Name).Split('_')[0] : Resource.Guest)
+                        </strong>*@
+                    </div>              
+                }
+            </div>
+            @if (Request.IsAuthenticated)
+            { 
+                <div style="float: right;">
+                    @Html.ActionLink(Resource.LogOut, "Logout", "Account")
+
+                </div>                          
+            }
+
+            <div id="divSliderButton" class="sliderButton">
+                <div id="divSliderButtonIcon" class="open"></div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+</div>

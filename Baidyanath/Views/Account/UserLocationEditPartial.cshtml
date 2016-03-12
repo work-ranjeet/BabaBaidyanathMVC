@@ -1,0 +1,67 @@
+﻿@model Baidyanath.Models.Account.UserProfileLocationModel
+@using Baidyanath.Resources
+
+@using (Ajax.BeginForm("UserLocationEditPartial", "Account", FormMethod.Post, null))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+   
+    <div>
+        <span class="heading">@Resource.UserProfileLocation&nbsp;</span>
+        @Html.HiddenFor(model => model.UserID)
+        <span id="EditLocationCloseButton" style="float: right; color: red; cursor: pointer; font-weight: 800; font-size: larger;">X</span>
+    </div>
+    <hr />
+    <div>
+        <table>
+            <colgroup>
+                <col style="width: 45%;" />
+                <col style="width: 25%;" />
+                <col style="width: 30%;" />
+            </colgroup>
+            <tr>
+                <td style="text-align: right;">@Resource.EnterAddress</td>
+                <td>@Html.TextBoxFor(model => model.Address1, new { @style = "width:100%;" })</td>
+                <td>&nbsp;&nbsp;@Html.ValidationMessageFor(model => model.Address1, Resource.EnterAddress)</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">@Resource.EnterAddress</td>
+                <td>@Html.TextBoxFor(model => model.Address2, new { @style = "width:100%;" })</td>
+                <td>&nbsp;&nbsp; @Html.ValidationMessageFor(model => model.Address2, Resource.EnterAddress)</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">@Resource.EnterCity</td>
+                <td>@Html.TextBoxFor(model => model.City, new { @style = "width:100%;" })</td>
+                <td>&nbsp;&nbsp; @Html.ValidationMessageFor(model => model.City, Resource.EnterCity)</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">@Resource.EnterState</td>
+                <td>@Html.TextBoxFor(model => model.State, new { @style = "width:100%;" })</td>
+                <td>&nbsp;&nbsp; @Html.ValidationMessageFor(model => model.State, Resource.EnterState)</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">@Resource.EnterCountry</td>
+                <td>@Html.TextBoxFor(model => model.Country, new { @style = "width:100%;" })</td>
+                <td>&nbsp;&nbsp;@Html.ValidationMessageFor(model => model.Country, Resource.EnterCountry)</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">@Resource.EnterMobileNo</td>
+                <td>@Html.TextBoxFor(model => model.Mobile, new { @style = "width:100%;" })</td>
+                <td>&nbsp;&nbsp;@Html.ValidationMessageFor(model => model.Mobile, Resource.EnterMobileNo)</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">@Resource.EnterEmail</td>
+                <td>@Html.TextBoxFor(model => model.Email, new { @style = "width:100%;" })</td>
+                <td>&nbsp;&nbsp; @Html.ValidationMessageFor(model => model.Email, Resource.EnterEmail)</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="text-align: right;">
+                    <input type="submit" value="Update" /></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+   
+}

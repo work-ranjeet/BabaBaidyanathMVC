@@ -1,0 +1,33 @@
+﻿@using Baidyanath.Resources
+<ul id="menu">
+    <li class="@(Convert.ToString(ViewContext.RouteData.Values["Controller"]) == "Home" ? "active" : "")">
+        @Html.ActionLink(Resource.MenuHome, "Index", "Home")
+    </li>
+    <li class="@(Convert.ToString(ViewContext.RouteData.Values["Controller"]) == "AboutUs" ? "active" : "")">
+        @Html.ActionLink(Resource.MenuAboutUs, "AboutUs", "AboutUs")
+    </li>
+    <li class="@(Convert.ToString(ViewContext.RouteData.Values["Controller"]) == "Tourism" ? "active" : "")">
+        @Html.ActionLink(Resource.MenuTourism, "Tourism", "Tourism")
+    </li>
+    <li class="@(Convert.ToString(ViewContext.RouteData.Values["Controller"]) == "Mantra" ? "active" : "")">
+        @Html.ActionLink(Resource.MenuMantras, "Mantra", "Mantra")
+    </li>
+    <li class="@(Convert.ToString(ViewContext.RouteData.Values["Controller"]) == "Service" && Convert.ToString(ViewContext.RouteData.Values["Action"]) == "Services" ? "active" : "")">
+        @Html.ActionLink(Resource.MenuOurServices, "Services", "Service")
+    </li>
+ @*   <li class="@(Convert.ToString(ViewContext.RouteData.Values["Controller"]) == "Gallery" ? "active" : "")">
+        @Html.ActionLink(Resource.MenuGallery, "Index", "Gallery")
+    </li>*@
+    <li>
+        @Resource.MenuGallery
+    </li>
+    <li class="@(Convert.ToString(ViewContext.RouteData.Values["Controller"]) == "Account" && Convert.ToString(ViewContext.RouteData.Values["Action"]) == "UserRegisteration" ? "active" : "")">
+        @Html.ActionLink(Resource.MenuMembership, "UserRegisteration", "Account")
+    </li>
+    <li class="@(Convert.ToString(ViewContext.RouteData.Values["Controller"]) == "ContactUs" && Convert.ToString(ViewContext.RouteData.Values["Action"]) == "ContactUs" ? "active" : "")">
+        @Html.ActionLink(Resource.MenuContactUs, "ContactUs", "ContactUs")
+    </li>
+    <li style="border-right: 0px !important">
+        @{Html.RenderPartial("~//views//LanguageSwitcher//SwitchLanguage.cshtml", new Baidyanath.Models.LanguageSwitcher.Language());}
+    </li>
+</ul>
